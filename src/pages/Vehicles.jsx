@@ -67,7 +67,14 @@ function Vehicles() {
         <Navbar />
 
         <div style={{ padding: "30px" }}>
-          <h1 style={{ marginBottom: "10px" }}>Vehicle Management</h1>
+          <h1
+            style={{
+              textAlign: "center",
+              color: "#1e293b",
+            }}
+          >
+            Vehicles Management
+          </h1>
 
           <p style={{ color: "#666" }}>
             Manage all transport vehicles.
