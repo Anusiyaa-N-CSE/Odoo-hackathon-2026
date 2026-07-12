@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Access Denied | TransitOps</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="unauthorized-container">
+
+    <div class="card">
+
+        <div class="icon">
+
+            <i class="fa-solid fa-lock"></i>
+
+        </div>
+
+        <h1>Access Restricted</h1>
+
+        <h3>403 - Unauthorized Access</h3>
+
+        <p>
+
+            Sorry! You don't have permission to access this page.
+
+        </p>
+
+        <p>
+
+            Please contact your Fleet Manager or System Administrator
+            if you believe this is a mistake.
+
+        </p>
+
+        <div class="role-box">
+
+            <p>
+
+                Logged in as:
+
+            </p>
+
+            <h2 id="userRole">
+
+                Driver
+
+            </h2>
+
+        </div>
+
+        <div class="buttons">
+
+            <button onclick="goDashboard()">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </button>
+
+            <button onclick="logout()">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function goDashboard(){
+
+    window.location.href="dashboard.html";
+
+}
+
+function logout(){
+
+    window.location.href="login.html";
+
+}
+
+</script>
+
+</body>
+
+</html>

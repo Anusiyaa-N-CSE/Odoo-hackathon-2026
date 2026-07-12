@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <template id="login_page" name="Transit Login">
+
+        <t t-call="website.layout">
+
+            <div class="container">
+
+                <h2>TransitOps Login</h2>
+
+                <form>
+
+                    <input type="text" placeholder="Username"/>
+
+                    <input type="password" placeholder="Password"/>
+
+                    <button type="submit">Login</button>
+
+                </form>
+
+            </div>
+
+        </t>
+
+    </template>
+
+</odoo>

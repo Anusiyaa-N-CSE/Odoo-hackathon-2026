@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <template id="dashboard_page" name="Dashboard">
+
+        <t t-call="website.layout">
+
+            <div class="container">
+
+                <h2>Dashboard</h2>
+
+                <p>Welcome to TransitOps Dashboard.</p>
+
+            </div>
+
+        </t>
+
+    </template>
+
+</odoo>

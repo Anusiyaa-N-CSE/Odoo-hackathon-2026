@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="group_transit_user" model="res.groups">
+        <field name="name">Transit User</field>
+    </record>
+
+    <record id="group_transit_manager" model="res.groups">
+        <field name="name">Transit Manager</field>
+        <field name="implied_ids" eval="[(4, ref('transitops_auth.group_transit_user'))]"/>
+    </record>
+
+</odoo>
