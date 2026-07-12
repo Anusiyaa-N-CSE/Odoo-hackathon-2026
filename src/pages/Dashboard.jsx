@@ -1,6 +1,8 @@
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
+import TripChart from "../components/TripChart";
+
 function Dashboard() {
   return (
     <div style={{ display: "flex" }}>
@@ -22,20 +24,24 @@ function Dashboard() {
             Fleet Management System for tracking vehicles, drivers,
             trips, maintenance and expenses.
           </p>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "20px",
+              flexWrap: "wrap",
+              marginTop: "30px",
+            }}
+          >
+            <Card title="Vehicles" value="24" color="#2563eb" />
+            <Card title="Drivers" value="18" color="#16a34a" />
+            <Card title="Trips Today" value="36" color="#ea580c" />
+            <Card title="Revenue" value="₹1.2L" color="#9333ea" />
+          </div>
+
+          {/* Weekly Trips Chart */}
+          <TripChart />
         </div>
-        <div
-  style={{
-    display: "flex",
-    gap: "20px",
-    flexWrap: "wrap",
-    marginTop: "30px",
-  }}
->
-  <Card title="Vehicles" value="24" color="#2563eb" />
-  <Card title="Drivers" value="18" color="#16a34a" />
-  <Card title="Trips Today" value="36" color="#ea580c" />
-  <Card title="Revenue" value="₹1.2L" color="#9333ea" />
-</div>
       </div>
     </div>
   );
