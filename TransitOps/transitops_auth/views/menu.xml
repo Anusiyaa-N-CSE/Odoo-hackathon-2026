@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <menuitem id="transit_root_menu"
+              name="TransitOps"/>
+
+    <menuitem id="transit_user_menu"
+              name="Users"
+              parent="transit_root_menu"/>
+
+</odoo>

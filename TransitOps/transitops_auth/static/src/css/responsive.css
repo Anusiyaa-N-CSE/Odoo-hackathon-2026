@@ -1,0 +1,93 @@
+/* ===== Responsive Design ===== */
+
+
+/* Tablets */
+@media (max-width: 992px) {
+
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dashboard-content {
+        padding: 20px;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+
+    .login-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+
+    .dashboard-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .sidebar {
+        padding: 15px;
+    }
+
+
+    .sidebar ul li {
+        padding: 10px;
+    }
+
+
+    .dashboard-content {
+        padding: 15px;
+    }
+
+
+    .dashboard-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+}
+
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+
+    .login-box {
+        width: 95%;
+    }
+
+
+    .login-box h2 {
+        font-size: 22px;
+    }
+
+
+    .card p {
+        font-size: 22px;
+    }
+
+
+    .logout-btn {
+        width: 100%;
+    }
+
+}

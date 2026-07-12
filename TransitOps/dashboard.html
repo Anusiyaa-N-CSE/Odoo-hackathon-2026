@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TransitOps Dashboard</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <img src="images/logo.png" alt="logo">
+
+        <h2>TransitOps</h2>
+
+    </div>
+
+    <ul>
+
+        <li class="active">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </li>
+
+        <li>
+            <i class="fa-solid fa-truck"></i>
+            Vehicles
+        </li>
+
+        <li>
+            <i class="fa-solid fa-id-card"></i>
+            Drivers
+        </li>
+
+        <li>
+            <i class="fa-solid fa-route"></i>
+            Trips
+        </li>
+
+        <li>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            Maintenance
+        </li>
+
+        <li>
+            <i class="fa-solid fa-chart-line"></i>
+            Reports
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+    <!-- Navbar -->
+
+    <div class="navbar">
+
+        <div>
+
+            <h2>Dashboard</h2>
+
+            <p id="welcomeText">
+                Welcome 👋
+            </p>
+
+        </div>
+
+        <div class="profile">
+
+            <img src="images/user.png">
+
+            <span id="username">
+                User
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- Dashboard Cards -->
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-truck"></i>
+
+            <h3 id="vehicleCount">--</h3>
+
+            <p>Vehicles</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-user"></i>
+
+            <h3 id="driverCount">--</h3>
+
+            <p>Drivers</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-road"></i>
+
+            <h3 id="tripCount">--</h3>
+
+            <p>Trips</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+            <h3 id="maintenanceCount">--</h3>
+
+            <p>Maintenance</p>
+
+        </div>
+
+    </div>
+
+    <!-- Welcome Card -->
+
+    <div class="welcome-card">
+
+        <h2>Welcome to TransitOps 🚚</h2>
+
+        <p>
+
+            You have successfully logged in.
+
+        </p>
+
+        <p>
+
+            Use the left menu to navigate through the Transport Management System.
+
+        </p>
+
+    </div>
+
+    <!-- Role Information -->
+
+    <div class="role-card">
+
+        <h3>Your Role</h3>
+
+        <h2 id="roleName">
+
+            Fleet Manager
+
+        </h2>
+
+        <p>
+
+            Permissions will be loaded based on your assigned role.
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
